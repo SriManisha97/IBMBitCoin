@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BitCoin Website</title>
+    </style>
+</head>
+
+<body>
+    <h1>Bitcoin Data Entry</h1>
+
+    <!-- Form-->
+    <form id="coinForm" onsubmit="addCoin(event)">
+        <label>Name: <input type="text" id="coinName" required></label><br>
+        <label>Symbol: <input type="text" id="coinSymbol" required></label><br>
+        <label>Price: <input type="number" id="coinPrice" required></label><br>
+        <label>Market Cap: <input type="number" id="marketCap" required></label><br>
+        <label>Circulating Supply: <input type="number" id="circulatingSupply" required></label><br>
+        <button type="submit">Add Coin</button>
+    </form>
+    <p id="message"></p>
+
+    <h2>Bitcoin Details</h2>
+    <ul id="bitcoinList"></ul>
+
+</body>
+<script src="app.js"></script>
+
+</html>
